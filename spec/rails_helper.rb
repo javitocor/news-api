@@ -5,7 +5,6 @@ require 'rspec/rails'
 require 'spec_helper'
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'capybara/rspec'
-require 'factory_bot_rails'
 
 # Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
@@ -23,7 +22,7 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
 
-  config.include FactoryBot::Syntax::Methods
+  
   config.include Devise::Test::IntegrationHelpers, type: :request
 
   config.before(:suite) do

@@ -1,5 +1,11 @@
 require 'rails_helper'
-
+require 'capybara/rspec'
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'User associations tests' do
+    it { should have_many(:news) }
+  end
+  context 'Validations for users' do
+    it { should validate_presence_of(:username) }
+    it { should validate_uniqueness_of(:username).ignoring_case_sensitivity }
+  end
 end

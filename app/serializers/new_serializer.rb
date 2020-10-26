@@ -1,3 +1,4 @@
 class NewSerializer < ActiveModel::Serializer
-  attributes :id
+  belongs_to :user
+  attributes :id, :title, :content, :user_id
 end

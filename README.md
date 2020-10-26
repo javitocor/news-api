@@ -23,8 +23,6 @@
 
 >  A basic API where users admins can create News and logged users can see them. Built with Ruby on Rails.
 
-
-
 Additional description about the project and its features.
 
 ## Built With
@@ -41,7 +39,7 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-You can check all the project information [here](app/assets/docs/projectinformation.md)
+You can check all the project information [here](app/assets/docs/projectinformation.md) :point_left
 
 ### Usage
 To have this app on your pc, you need to:
